@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let data = { amount, category };
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbx.../exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbyOeOoAOq4LHyv-U4muNUlCXx6m_4ApCWLxN1VlunrTf8cvXRJU4tZdJqiCxpiI883X/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
