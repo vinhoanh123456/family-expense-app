@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let data = { amount, category };
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbyuZ54CjfMI6jROciGlXbSliI6lML8gK8xiW0d6zOV8DEAasZwIQIkLr781qL3U8auT/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbw-wv-HTARsXZ4Gm2au1MRZa6uZb6ZECdN-4vLbOFJcJPXtO6SQNajq6Xq2BSTPrpL3/exec", {
   method: "POST",
   mode: "cors",
   credentials: "include", // Quan trọng để gửi xác thực
