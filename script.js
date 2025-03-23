@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let data = { amount, category };
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbwBKXx2QdaDg-QrJ-kzCS2KQnwSX8f2CzqfWZ8cSW62KWo3cB70XMj98g4R5JduYub9/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      await fetch("https://script.google.com/macros/s/AKfycbyuZ54CjfMI6jROciGlXbSliI6lML8gK8xiW0d6zOV8DEAasZwIQIkLr781qL3U8auT/exec", {
+  method: "POST",
+  mode: "cors",
+  credentials: "include", // Quan trọng để gửi xác thực
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data),
+});
+
 
       alert("Giao dịch đã được lưu!");
       document.getElementById("expenseForm").reset();
